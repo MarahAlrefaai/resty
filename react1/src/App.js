@@ -1,13 +1,31 @@
 import './App.css';
+import React from 'react'
 import Form from './component/form/form';
 import Header from './component/header/header';
-function App() {
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+/////////////////////////////////////////////
+//pages
+import History from '../src/component/history/history.js';
+import Help from './component/help/help.js';
+import Home from '../src/component/home/home.js';
+
+class App extends React.Component {
+  render() {
   return (
    <>
- <Header />
- <Form />
+ <BrowserRouter>
+        <Header />
+        <Routes>
+         
+        <Route path="/home" element={<Home />} />
+
+          <Route path="/history" element={<History />} />
+        <Route path="/help" element={<Help />} />
+        </Routes>
+      </BrowserRouter>
+     
    </>
-  );
+  );}
 }
 
 export default App;
