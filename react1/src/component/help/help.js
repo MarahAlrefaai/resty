@@ -1,14 +1,15 @@
 import React from 'react';
 
-class Help extends React.Component {
+
+  export default function Help () {
  
-  render() {
+ 
     return (
       <main>
         Help Goes Here
       </main>
     );
-  }
+  
 }
 
-export default Help;
+

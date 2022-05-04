@@ -1,15 +1,15 @@
 import React from 'react';
 
 import Form from '../form/form.js';
-class App extends React.Component {
-  render() {
+import Result from '../result/result.js';
+
+  export default function App () {
+ 
    
     return (
       <>
         <Form  />
-       
+     <Result />
       </>
     );
   }
-}
-export default App;

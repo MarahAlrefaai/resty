@@ -1,14 +1,12 @@
 import React from 'react';
 
-class History extends React.Component {
+export default function History () {
  
-  render() {
     return (
       <main>
         History Goes Here
       </main>
     );
   }
-}
 
-export default History;
+
