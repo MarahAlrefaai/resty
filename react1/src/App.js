@@ -9,8 +9,11 @@ import History from '../src/component/history/history.js';
 import Help from './component/help/help.js';
 import Home from '../src/component/home/home.js';
 import Footer from '../src/component/footer/footer.js';
+
+
 class App extends React.Component {
   render() {
+    
   return (
    <>
  <BrowserRouter>
