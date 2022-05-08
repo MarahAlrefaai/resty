@@ -7,9 +7,10 @@ function Form(props) {
   const [method, setMethod] = useState('GET');
   const [body, setBody] = useState();
   const handleMethod = (event) => {
-    let elems = document.querySelectorAll('span');
-    elems.forEach(elem => elem.style.backgroundColor = "rgb(175, 176, 182)");
-    document.getElementById(`${event.target.id}`).style.backgroundColor = "white";
+    event.preventDefault();
+    // let elems = document.querySelectorAll('span');
+    // elems.forEach(elem => elem.style.backgroundColor = "rgb(175, 176, 182)");
+    // document.getElementById(`${event.target.id}`).style.backgroundColor = "white";
     setMethod(event.target.id);
   }
   const handleBody = (event) => {
@@ -38,7 +39,7 @@ function Form(props) {
             <div className="request">
                 <input className="input" type="text" name="url" placeholder="http://api.url.here"  onChange={handleURL}/>
                
-                <button className= "send" type="submit" > {method} </button>
+                <button className= "send" type="submit"  onClick={!props.isloading ? props.handleClick : null}> {method} </button>
             </div>
             <div className="methods">
                 <button className="method" id="GET" name ="GET" onClick={handleMethod}>GET</button>

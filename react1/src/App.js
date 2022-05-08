@@ -20,7 +20,7 @@ class App extends React.Component {
         <Header />
         <Routes>
          
-        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home />} />
 
           <Route path="/history" element={<History />} />
         <Route path="/help" element={<Help />} />
