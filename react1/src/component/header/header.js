@@ -10,7 +10,7 @@ function Header (props)  {
 
 <nav>
 <ul>
-<li><NavLink to="/home">Home</NavLink></li>
+<li><NavLink to="/">Home</NavLink></li>
           <li><NavLink to="/history">History</NavLink></li>
           <li><NavLink to="/help">Help</NavLink></li>
         </ul>
