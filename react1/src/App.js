@@ -1,6 +1,6 @@
-import './App.css';
+import './App.scss';
 import React from 'react'
-import Form from './component/form/form';
+
 import Header from './component/header/header';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 /////////////////////////////////////////////

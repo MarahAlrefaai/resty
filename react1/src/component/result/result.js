@@ -1,5 +1,5 @@
 import React from 'react';
-import results from './result.css'
+import './result.scss'
 import JSONPretty from 'react-json-pretty';
   export default function Result (props) {
  
